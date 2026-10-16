@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>发一崇德 新加坡道场 | Fa Yi Chong De Singapore</title>
+<meta name="description" content="发一崇德新加坡道场 · 官方资讯与世界分享 · Fa Yi Chong De Singapore - sharing with the world">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;900&family=Noto+Serif+TC:wght@400;600;900&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sg-red:#EF3340; --sg-red-dark:#C8102E; --cream:#FBF7EC; --gold:#C9A227;
+    --ink:#2B2320; --jade:#1F5C45; --white:#FFFFFF;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Noto Serif SC','Noto Serif TC',serif;color:var(--ink);background:var(--cream);overflow-x:hidden}
+  .en{font-family:'Cormorant Garamond',serif}
+
+  /* Singapore flag ribbon */
+  .flag-ribbon{height:8px;background:linear-gradient(90deg,var(--sg-red) 0 50%,var(--white) 50% 100%);box-shadow:0 1px 4px rgba(0,0,0,.15)}
+
+  header.hero{
+    position:relative;text-align:center;padding:72px 20px 0;
+    background:
+      radial-gradient(ellipse at 50% -10%, rgba(239,51,64,.10), transparent 60%),
+      linear-gradient(180deg,#fff 0%,var(--cream) 78%);
+  }
+  .crescent-stars{position:absolute;top:26px;left:26px;width:74px;height:74px;opacity:.85}
+  .crescent-stars.right{left:auto;right:26px;transform:scaleX(-1)}
+  .hero-logo{width:172px;height:174px;object-fit:cover;border-radius:50%;border:5px solid var(--gold);
+    box-shadow:0 10px 34px rgba(43,35,32,.25);background:#fff}
+  h1{font-size:clamp(2rem,5.4vw,3.4rem);font-weight:900;letter-spacing:.06em;margin:26px 0 6px}
+  h1 .sg{color:var(--sg-red-dark)}
+  .hero-sub{font-size:clamp(1rem,2.4vw,1.25rem);color:#6d5f55;letter-spacing:.28em;margin-bottom:10px}
+  .hero-tag{display:inline-block;margin:14px 0 40px;padding:10px 26px;border:1px solid var(--gold);border-radius:999px;
+    font-size:1.05rem;color:var(--jade);background:rgba(255,255,255,.7)}
+  .skyline{display:block;width:100%;max-width:1100px;margin:0 auto}
+
+  section{max-width:1000px;margin:0 auto;padding:72px 22px}
+  .sec-title{text-align:center;font-size:clamp(1.6rem,3.6vw,2.3rem);font-weight:900;letter-spacing:.12em;margin-bottom:8px}
+  .sec-title-en{text-align:center;color:var(--gold);font-size:1.05rem;letter-spacing:.34em;text-transform:uppercase;margin-bottom:40px}
+  .divider{width:64px;height:3px;background:var(--sg-red);margin:14px auto 0;border-radius:2px}
+
+  .about-grid{display:grid;gap:26px}
+  @media(min-width:760px){.about-grid{grid-template-columns:1fr 1fr 1fr}}
+  .lang-card{background:#fff;border-top:4px solid var(--sg-red);border-radius:14px;padding:30px 26px;
+    box-shadow:0 6px 24px rgba(43,35,32,.08);line-height:2}
+  .lang-card h3{color:var(--sg-red-dark);font-size:1.12rem;margin-bottom:14px;letter-spacing:.1em}
+  .lang-card p{font-size:1.02rem}
+
+  .motto{background:linear-gradient(120deg,var(--sg-red-dark),var(--sg-red));color:#fff;text-align:center;
+    padding:64px 22px;margin:20px 0}
+  .motto .big{font-size:clamp(1.7rem,4.6vw,2.8rem);font-weight:900;letter-spacing:.2em}
+  .motto .en-line{margin-top:14px;font-size:1.15rem;opacity:.92;font-style:italic}
+
+  .cards{display:grid;gap:24px}
+  @media(min-width:760px){.cards{grid-template-columns:repeat(3,1fr)}}
+  .card{background:#fff;border-radius:16px;padding:34px 24px;text-align:center;
+    box-shadow:0 6px 24px rgba(43,35,32,.08);border-bottom:4px solid var(--gold);transition:transform .25s}
+  .card:hover{transform:translateY(-6px)}
+  .card svg{width:52px;height:52px;margin-bottom:16px}
+  .card h3{font-size:1.18rem;margin-bottom:10px;color:var(--jade)}
+  .card p{font-size:.98rem;line-height:1.9;color:#5b4f47}
+  .card .en-sub{display:block;margin-top:8px;font-size:.85rem;color:var(--gold);letter-spacing:.12em}
+
+  .follow{text-align:center;background:#fff;border-radius:20px;padding:56px 26px;box-shadow:0 8px 30px rgba(43,35,32,.10)}
+  .follow .count{font-size:clamp(2.2rem,6vw,3.2rem);font-weight:900;color:var(--sg-red-dark)}
+  .follow .count-label{color:#6d5f55;margin-bottom:6px}
+  .follow .asof{font-size:.82rem;color:#a29386;margin-bottom:28px}
+  .btn{display:inline-block;background:var(--sg-red);color:#fff;text-decoration:none;font-size:1.15rem;font-weight:600;
+    padding:16px 44px;border-radius:999px;letter-spacing:.08em;box-shadow:0 8px 22px rgba(239,51,64,.35);transition:background .2s}
+  .btn:hover{background:var(--sg-red-dark)}
+  .btn small{display:block;font-size:.8rem;font-weight:400;opacity:.9;margin-top:2px}
+
+  .orchid-band{display:flex;justify-content:center;gap:34px;padding:10px 0 0;opacity:.9}
+  .orchid-band svg{width:44px;height:44px}
+
+  footer{background:var(--ink);color:#cbbfae;text-align:center;padding:44px 22px;font-size:.92rem;line-height:2}
+  footer a{color:var(--gold);text-decoration:none}
+  footer .foot-name{color:#fff;font-size:1.05rem;letter-spacing:.15em}
+</style>
+</head>
+<body>
+
+<div class="flag-ribbon"></div>
+
+<header class="hero">
+  <svg class="crescent-stars" viewBox="0 0 100 100" aria-hidden="true">
+    <path d="M50 12a30 30 0 1 0 0 60 24 24 0 1 1 0-60z" fill="#EF3340"/>
+    <g fill="#EF3340">
+      <path d="M60 30l1.6 4.6 4.6 1.6-4.6 1.6L60 42.4l-1.6-4.6-4.6-1.6 4.6-1.6z"/>
+      <path d="M74 38l1.3 3.8 3.8 1.3-3.8 1.3L74 48.2l-1.3-3.8-3.8-1.3 3.8-1.3z"/>
+      <path d="M70 52l1.3 3.8 3.8 1.3-3.8 1.3L70 62.2l-1.3-3.8-3.8-1.3 3.8-1.3z"/>
+      <path d="M56 56l1.3 3.8 3.8 1.3-3.8 1.3L56 66.2l-1.3-3.8-3.8-1.3 3.8-1.3z"/>
+      <path d="M52 42l1.3 3.8 3.8 1.3-3.8 1.3L52 52.2l-1.3-3.8-3.8-1.3 3.8-1.3z"/>
+    </g>
+  </svg>
+  <svg class="crescent-stars right" viewBox="0 0 100 100" aria-hidden="true">
+    <path d="M50 12a30 30 0 1 0 0 60 24 24 0 1 1 0-60z" fill="#EF3340"/>
+    <g fill="#EF3340">
+      <path d="M60 30l1.6 4.6 4.6 1.6-4.6 1.6L60 42.4l-1.6-4.6-4.6-1.6 4.6-1.6z"/>
+      <path d="M74 38l1.3 3.8 3.8 1.3-3.8 1.3L74 48.2l-1.3-3.8-3.8-1.3 3.8-1.3z"/>
+      <path d="M70 52l1.3 3.8 3.8 1.3-3.8 1.3L70 62.2l-1.3-3.8-3.8-1.3 3.8-1.3z"/>
+      <path d="M56 56l1.3 3.8 3.8 1.3-3.8 1.3L56 66.2l-1.3-3.8-3.8-1.3 3.8-1.3z"/>
+      <path d="M52 42l1.3 3.8 3.8 1.3-3.8 1.3L52 52.2l-1.3-3.8-3.8-1.3 3.8-1.3z"/>
+    </g>
+  </svg>
+
+  <img class="hero-logo" src="logo.jpg" alt="发一崇德新加坡道场 标志">
+  <h1>发一崇德 <span class="sg">新加坡道场</span></h1>
+  <p class="hero-sub">發一崇德 · 新加坡道場</p>
+  <p class="en hero-sub" style="letter-spacing:.22em">FA YI CHONG DE · SINGAPORE</p>
+  <span class="hero-tag">一起改变世界，照福众生 · Changing the world together</span>
+
+  <svg class="skyline" viewBox="0 0 1100 150" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+    <g fill="#2B2320" opacity=".9">
+      <rect x="0" y="110" width="40" height="40"/><rect x="48" y="92" width="26" height="58"/>
+      <rect x="82" y="104" width="34" height="46"/><rect x="124" y="84" width="22" height="66"/>
+      <rect x="154" y="100" width="30" height="50"/>
+      <rect x="196" y="70" width="18" height="80"/><rect x="220" y="88" width="28" height="62"/>
+      <rect x="256" y="98" width="24" height="52"/>
+      <!-- Supertree-like -->
+      <rect x="300" y="60" width="6" height="90"/><ellipse cx="303" cy="52" rx="26" ry="16"/>
+      <rect x="342" y="78" width="26" height="72"/><rect x="376" y="94" width="30" height="56"/>
+      <rect x="414" y="66" width="20" height="84"/><rect x="442" y="90" width="26" height="60"/>
+      <!-- MBS-like three towers + boat -->
+      <rect x="500" y="64" width="20" height="86"/><rect x="528" y="64" width="20" height="86"/><rect x="556" y="64" width="20" height="86"/>
+      <path d="M492 62 Q538 44 584 62 L584 56 Q538 38 492 56 Z"/>
+      <rect x="596" y="92" width="26" height="58"/><rect x="630" y="78" width="22" height="72"/>
+      <rect x="660" y="100" width="30" height="50"/>
+      <!-- Supertree -->
+      <rect x="716" y="56" width="6" height="94"/><ellipse cx="719" cy="48" rx="24" ry="15"/>
+      <rect x="756" y="86" width="26" height="64"/><rect x="790" y="70" width="20" height="80"/>
+      <rect x="818" y="96" width="28" height="54"/><rect x="854" y="82" width="24" height="68"/>
+      <rect x="886" y="104" width="30" height="46"/><rect x="924" y="90" width="22" height="60"/>
+      <rect x="954" y="106" width="28" height="44"/><rect x="990" y="96" width="24" height="54"/>
+      <rect x="1022" y="110" width="36" height="40"/><rect x="1066" y="100" width="34" height="50"/>
+    </g>
+    <rect x="0" y="148" width="1100" height="2" fill="#C9A227"/>
+  </svg>
+</header>
+
+<section id="about">
+  <h2 class="sec-title">关于我们 · 關於我們</h2>
+  <p class="sec-title-en en">About Us</p>
+  <div class="divider"></div>
+  <div style="height:34px"></div>
+  <div class="about-grid">
+    <div class="lang-card">
+      <h3>简体</h3>
+      <p>欢迎来到发一崇德新加坡道场。在这里可以获取最新活动报道、各国相关活动讯息，与感受正能量的传递。一起改变世界，照福众生！</p>
+    </div>
+    <div class="lang-card">
+      <h3>繁體</h3>
+      <p>歡迎來到發一崇德新加坡道場。在這裡可以獲取最新活動報道、各國相關活動訊息，與感受正能量的傳遞。一起改變世界，照福眾生！</p>
+    </div>
+    <div class="lang-card">
+      <h3 class="en">English</h3>
+      <p class="en" style="font-size:1.1rem">Welcome to Fa Yi Chong De Singapore. Here you will find our latest activity reports, news of related events around the world, and the sharing of positive energy. Together, we change the world and bring blessings to all beings.</p>
+    </div>
+  </div>
+</section>
+
+<div class="motto">
+  <p class="big">一起改变世界，照福众生</p>
+  <p class="en en-line">Together, we change the world and bring blessings to all beings.</p>
+</div>
+
+<section id="highlights">
+  <h2 class="sec-title">精彩内容 · 精彩內容</h2>
+  <p class="sec-title-en en">What We Share</p>
+  <div class="divider"></div>
+  <div style="height:34px"></div>
+  <div class="cards">
+    <div class="card">
+      <svg viewBox="0 0 64 64" fill="none"><rect x="8" y="10" width="48" height="40" rx="4" stroke="#C8102E" stroke-width="3"/><path d="M8 22h48" stroke="#C8102E" stroke-width="3"/><circle cx="20" cy="34" r="5" fill="#C9A227"/><path d="M14 46l12-10 8 7 8-9 8 12" stroke="#1F5C45" stroke-width="3" stroke-linejoin="round"/></svg>
+      <h3>最新活动报道</h3>
+      <p>记录道场每一项活动的珍贵时刻，与道亲及朋友分享圆满与感动。</p>
+      <span class="en-sub en">Latest activity reports</span>
+    </div>
+    <div class="card">
+      <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="24" stroke="#C8102E" stroke-width="3"/><path d="M8 32h48M32 8c-8 8-8 40 0 48M32 8c8 8 8 40 0 48" stroke="#1F5C45" stroke-width="3"/><circle cx="32" cy="32" r="24" stroke="#C9A227" stroke-width="1.5" stroke-dasharray="3 4"/></svg>
+      <h3>各国活动讯息</h3>
+      <p>汇集世界各地相关活动的最新讯息，让善缘跨越国界、彼此相连。</p>
+      <span class="en-sub en">News from around the world</span>
+    </div>
+    <div class="card">
+      <svg viewBox="0 0 64 64" fill="none"><path d="M32 54S10 40 10 24a11 11 0 0 1 22-2 11 11 0 0 1 22 2c0 16-22 30-22 30z" fill="#EF3340"/><path d="M32 20v-8M24 14l4 4M40 14l-4 4" stroke="#C9A227" stroke-width="3" stroke-linecap="round"/></svg>
+      <h3>正能量传递</h3>
+      <p>感受善念与正能量的传递，愿人人心中充满光明与希望。</p>
+      <span class="en-sub en">Sharing positive energy</span>
+    </div>
+  </div>
+</section>
+
+<section id="follow">
+  <div class="follow">
+    <p class="count">1,144</p>
+    <p class="count-label">位朋友已经关注 · followers and growing</p>
+    <p class="asof">截至 2026 年 10 月官方脸书页显示 · as shown on the official Facebook page, October 2026</p>
+    <a class="btn" href="https://www.facebook.com/fycdsg/" target="_blank" rel="noopener">
+      关注官方脸书页
+      <small class="en">Follow us on Facebook · facebook.com/fycdsg</small>
+    </a>
+    <div class="orchid-band">
+      <svg viewBox="0 0 48 48"><g fill="none" stroke="#B03A8C" stroke-width="2"><ellipse cx="24" cy="14" rx="6" ry="9"/><ellipse cx="13" cy="26" rx="8" ry="6" transform="rotate(-30 13 26)"/><ellipse cx="35" cy="26" rx="8" ry="6" transform="rotate(30 35 26)"/><ellipse cx="17" cy="36" rx="6" ry="5" transform="rotate(-15 17 36)"/><ellipse cx="31" cy="36" rx="6" ry="5" transform="rotate(15 31 36)"/></g><circle cx="24" cy="28" r="4" fill="#C9A227"/></svg>
+      <svg viewBox="0 0 48 48"><g fill="none" stroke="#B03A8C" stroke-width="2"><ellipse cx="24" cy="14" rx="6" ry="9"/><ellipse cx="13" cy="26" rx="8" ry="6" transform="rotate(-30 13 26)"/><ellipse cx="35" cy="26" rx="8" ry="6" transform="rotate(30 35 26)"/><ellipse cx="17" cy="36" rx="6" ry="5" transform="rotate(-15 17 36)"/><ellipse cx="31" cy="36" rx="6" ry="5" transform="rotate(15 31 36)"/></g><circle cx="24" cy="28" r="4" fill="#C9A227"/></svg>
+      <svg viewBox="0 0 48 48"><g fill="none" stroke="#B03A8C" stroke-width="2"><ellipse cx="24" cy="14" rx="6" ry="9"/><ellipse cx="13" cy="26" rx="8" ry="6" transform="rotate(-30 13 26)"/><ellipse cx="35" cy="26" rx="8" ry="6" transform="rotate(30 35 26)"/><ellipse cx="17" cy="36" rx="6" ry="5" transform="rotate(-15 17 36)"/><ellipse cx="31" cy="36" rx="6" ry="5" transform="rotate(15 31 36)"/></g><circle cx="24" cy="28" r="4" fill="#C9A227"/></svg>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="foot-name">发一崇德 新加坡道场 · 發一崇德 新加坡道場</p>
+  <p class="en" style="font-size:1rem">Fa Yi Chong De · Singapore</p>
+  <p>官方脸书页 Official Facebook: <a href="https://www.facebook.com/fycdsg/" target="_blank" rel="noopener">facebook.com/fycdsg</a></p>
+  <p>本页内容依据官方脸书页公开资讯制作 · Content based on public information from the official Facebook page</p>
+</footer>
+
+</body>
+</html>

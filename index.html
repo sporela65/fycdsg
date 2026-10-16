@@ -44,7 +44,7 @@
   .divider{width:64px;height:3px;background:var(--sg-red);margin:14px auto 0;border-radius:2px}
 
   .about-grid{display:grid;gap:26px}
-  @media(min-width:760px){.about-grid{grid-template-columns:1fr 1fr 1fr}}
+  @media(min-width:760px){.about-grid{grid-template-columns:repeat(3,1fr)}}
   .lang-card{background:#fff;border-top:4px solid var(--sg-red);border-radius:14px;padding:30px 26px;
     box-shadow:0 6px 24px rgba(43,35,32,.08);line-height:2}
   .lang-card h3{color:var(--sg-red-dark);font-size:1.12rem;margin-bottom:14px;letter-spacing:.1em}
@@ -144,7 +144,7 @@
 
 <section id="about">
   <h2 class="sec-title">关于我们 · 關於我們</h2>
-  <p class="sec-title-en en">About Us</p>
+  <p class="sec-title-en en">About Us · Tentang Kami · எங்களைப் பற்றி</p>
   <div class="divider"></div>
   <div style="height:34px"></div>
   <div class="about-grid">
@@ -160,12 +160,22 @@
       <h3 class="en">English</h3>
       <p class="en" style="font-size:1.1rem">Welcome to Fa Yi Chong De Singapore. Here you will find our latest activity reports, news of related events around the world, and the sharing of positive energy. Together, we change the world and bring blessings to all beings.</p>
     </div>
+    <div class="lang-card">
+      <h3>Bahasa Melayu</h3>
+      <p>Selamat datang ke Fa Yi Chong De Singapura. Di sini anda boleh mendapatkan laporan aktiviti terkini, berita acara berkaitan dari seluruh dunia, dan berkongsi tenaga positif. Bersama-sama, kita mengubah dunia dan membawa keberkatan kepada semua makhluk.</p>
+    </div>
+    <div class="lang-card">
+      <h3>தமிழ்</h3>
+      <p>Fa Yi Chong De சிங்கப்பூர் தளத்திற்கு வரவேற்கிறோம். இங்கு எங்களின் சமீபத்திய நிகழ்வு அறிக்கைகள், உலகெங்கிலும் உள்ள தொடர்புடைய நிகழ்வுச் செய்திகள் மற்றும் நேர்மறை ஆற்றலின் பகிர்வு ஆகியவற்றைப் பெறலாம். ஒன்றிணைந்து உலகை மாற்றி, அனைத்து உயிர்களுக்கும் ஆசீர்வாதம் அளிப்போம்.</p>
+    </div>
   </div>
 </section>
 
 <div class="motto">
   <p class="big">一起改变世界，照福众生</p>
   <p class="en en-line">Together, we change the world and bring blessings to all beings.</p>
+  <p class="en-line">Bersama-sama, kita mengubah dunia dan membawa keberkatan kepada semua makhluk.</p>
+  <p class="en-line">ஒன்றிணைந்து உலகை மாற்றி, அனைத்து உயிர்களுக்கும் ஆசீர்வாதம் அளிப்போம்.</p>
 </div>
 
 <section id="highlights">
@@ -179,18 +189,21 @@
       <h3>最新活动报道</h3>
       <p>记录道场每一项活动的珍贵时刻，与道亲及朋友分享圆满与感动。</p>
       <span class="en-sub en">Latest activity reports</span>
+      <span class="en-sub">Laporan Aktiviti Terkini · சமீபத்திய நிகழ்வு அறிக்கைகள்</span>
     </div>
     <div class="card">
       <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="24" stroke="#C8102E" stroke-width="3"/><path d="M8 32h48M32 8c-8 8-8 40 0 48M32 8c8 8 8 40 0 48" stroke="#1F5C45" stroke-width="3"/><circle cx="32" cy="32" r="24" stroke="#C9A227" stroke-width="1.5" stroke-dasharray="3 4"/></svg>
       <h3>各国活动讯息</h3>
       <p>汇集世界各地相关活动的最新讯息，让善缘跨越国界、彼此相连。</p>
       <span class="en-sub en">News from around the world</span>
+      <span class="en-sub">Berita Aktiviti Seluruh Dunia · உலகளாவிய நிகழ்வுச் செய்திகள்</span>
     </div>
     <div class="card">
       <svg viewBox="0 0 64 64" fill="none"><path d="M32 54S10 40 10 24a11 11 0 0 1 22-2 11 11 0 0 1 22 2c0 16-22 30-22 30z" fill="#EF3340"/><path d="M32 20v-8M24 14l4 4M40 14l-4 4" stroke="#C9A227" stroke-width="3" stroke-linecap="round"/></svg>
       <h3>正能量传递</h3>
       <p>感受善念与正能量的传递，愿人人心中充满光明与希望。</p>
       <span class="en-sub en">Sharing positive energy</span>
+      <span class="en-sub">Penyebaran Tenaga Positif · நேர்மறை ஆற்றல் பகிர்வு</span>
     </div>
   </div>
 </section>
@@ -199,10 +212,13 @@
   <div class="follow">
     <p class="count">1,144</p>
     <p class="count-label">位朋友已经关注 · followers and growing</p>
-    <p class="asof">截至 2026 年 10 月官方脸书页显示 · as shown on the official Facebook page, October 2026</p>
+    <p class="count-label">sahabat telah mengikuti, dan terus bertambah · நண்பர்கள் பின்தொடர்கின்றனர், மேலும் அதிகரித்து வருகிறது</p>
+    <p class="asof" style="margin-bottom:6px">截至 2026 年 10 月官方脸书页显示 · as shown on the official Facebook page, October 2026</p>
+    <p class="asof">Setakat Oktober 2026, seperti dipaparkan di halaman Facebook rasmi · 2026 அக்டோபர் நிலவரப்படி, அதிகாரப்பூர்வ பேஸ்புக் பக்கத்தில் காட்டப்பட்டது</p>
     <a class="btn" href="https://www.facebook.com/fycdsg/" target="_blank" rel="noopener">
       关注官方脸书页
       <small class="en">Follow us on Facebook · facebook.com/fycdsg</small>
+      <small>Ikuti halaman Facebook rasmi · அதிகாரப்பூர்வ பேஸ்புக் பக்கத்தைப் பின்தொடருங்கள்</small>
     </a>
     <div class="orchid-band">
       <svg viewBox="0 0 48 48"><g fill="none" stroke="#B03A8C" stroke-width="2"><ellipse cx="24" cy="14" rx="6" ry="9"/><ellipse cx="13" cy="26" rx="8" ry="6" transform="rotate(-30 13 26)"/><ellipse cx="35" cy="26" rx="8" ry="6" transform="rotate(30 35 26)"/><ellipse cx="17" cy="36" rx="6" ry="5" transform="rotate(-15 17 36)"/><ellipse cx="31" cy="36" rx="6" ry="5" transform="rotate(15 31 36)"/></g><circle cx="24" cy="28" r="4" fill="#C9A227"/></svg>
@@ -217,6 +233,7 @@
   <p class="en" style="font-size:1rem">Fa Yi Chong De · Singapore</p>
   <p>官方脸书页 Official Facebook: <a href="https://www.facebook.com/fycdsg/" target="_blank" rel="noopener">facebook.com/fycdsg</a></p>
   <p>本页内容依据官方脸书页公开资讯制作 · Content based on public information from the official Facebook page</p>
+  <p>Kandungan laman ini berdasarkan maklumat awam daripada halaman Facebook rasmi · இப்பக்கத்தின் உள்ளடக்கம் அதிகாரப்பூர்வ பேஸ்புக் பக்கத்தின் பொது தகவல்களை அடிப்படையாகக் கொண்டது</p>
 </footer>
 
 </body>
